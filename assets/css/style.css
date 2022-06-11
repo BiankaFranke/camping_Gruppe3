@@ -20,7 +20,7 @@ main {
     max-width: 576px;
     color: #283A44;
     font-family: 'Raleway';
-    margin-bottom: 20%;
+    margin-bottom: 100px;
 }
 
 h1 {
@@ -45,11 +45,25 @@ header {
 #headerUnterkunft {
     background-color:  #F5F5F5;
 }
-/* #headerUnterkunft .gastgeberImg img:nth-of-type(1) {
+
+#bauernhof img {
     width: 100%;
     object-fit: cover;
-    border: 0px 30px;
-} */
+}
+
+#bauernhof {
+    position: relative;
+}
+
+.gastgeberImg2 button {
+    position: absolute;
+    background-color: #FFFFFF;
+    transform: translate(420px, -580px);
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    border: none;
+}
 
 #headerUnterkunft .gastgeberBeschreibung {
     display: flex;
@@ -129,9 +143,18 @@ input[type=range] {
     width: 95%;
     height: 4px;
     cursor: pointer;
-    /* background-color: #DDE86B; */
     border-radius: 2px;
     padding: 0px 16px 16px 16px; 
+    -webkit-appearance: none;
+    background-color: #DDE86B;
+}
+    
+input[type='range']::-webkit-slider-thumb {
+    width: 24px;
+    -webkit-appearance: none;
+    height: 12px;
+    background: #767F14;
+    border-radius: 8px;
 }
 
 #radius {
@@ -182,16 +205,19 @@ nav ul {
     width: 100%;
 }
 
-nav ul li:nth-of-type(3) {
-    object-fit: contain;
-}
-
 #navIconSearch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #BDCB20;
     width: 60px;
     height: 60px;
-    border-radius: 30px;
+    border-radius: 60px;
     box-shadow: 0px 2px 38px rgba(0, 0, 0, 0.3);
+}
+
+#navIconSearch img {
+    object-fit: cover;
 }
 
 /* MAIN */
@@ -210,7 +236,7 @@ nav ul li:nth-of-type(3) {
 .gastgeberImg button {
     position: absolute;
     background-color: #FFFFFF;
-    transform: translateX(-40px);
+    transform: translate(-40px, 10px);
     width: 32px;
     height: 32px;
     border-radius: 32px;
@@ -545,11 +571,10 @@ h2 {
 
 .beschreibungImg {
     position: absolute;
-    background-color: red;
     color: #FFFFFF;
     font-weight: 700;
     font-size: 12px;
     letter-spacing: 1.7px;
     text-transform: uppercase;
-    transform: translateX(70px);
+    transform: translate(70px, -20px);
 }
