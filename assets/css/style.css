@@ -35,14 +35,20 @@ header {
     font-weight: 600;
 }
 
+.gastgeberImg {
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
 #headerUnterkunft {
     background-color:  #F5F5F5;
 }
-#headerUnterkunft .gastgeberImg img:nth-of-type(1) {
+/* #headerUnterkunft .gastgeberImg img:nth-of-type(1) {
     width: 100%;
     object-fit: cover;
     border: 0px 30px;
-}
+} */
 
 #headerUnterkunft .gastgeberBeschreibung {
     display: flex;
@@ -193,12 +199,6 @@ nav ul li:nth-of-type(3) {
 .gastgeberName, .preis {
     font-size: 16px;
     font-weight: 500;
-}
-
-.gastgeberImg {
-    width: 100%;
-    object-fit: cover;
-    position: relative;
 }
 
 .gastgeberImg button {
@@ -418,6 +418,24 @@ h2 {
     padding: 8px 0px;
 }
 
+#letzterOrt {
+    display: flex;
+    align-items: flex-start;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+#letzterOrt div:nth-of-type(1) {
+    align-items: flex-start;
+}
+
+#letzterOrt div:nth-of-type(2) p:last-of-type {
+    align-items: flex-start;
+    font-weight: 400;
+}
+
+/* Statistik */
+
 .profilStatistik {
     display: flex;
     justify-content: space-around;
@@ -457,15 +475,45 @@ h2 {
     font-weight: 700;
     font-size: 12px;
     padding: 24px 0px 8px 16px;
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
 }
 
 .gallerySmall {
     display: flex;
     justify-content:space-evenly;
+    margin-bottom: 3%;
+}
+
+.img1 {
+    grid-area: img1;
+}
+
+.img2 {
+    grid-area: img2;
+}
+
+.img3 {
+    grid-area: img3;
 }
 
 .galleryBig {
-    display: flex;
-    justify-content:space-evenly;
-    gap: 5px 5px;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-areas: 
+    "img1 img2"
+    "img1 img3";
+    margin-bottom: 3%;
+    align-items:flex-end;
+}
+
+.beschreibungImg {
+    position: absolute;
+    background-color: red;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+    transform: translateX(70px);
 }
