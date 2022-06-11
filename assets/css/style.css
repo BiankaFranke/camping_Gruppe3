@@ -574,8 +574,9 @@ h2 {
 
 .gallerySmall {
     display: flex;
+    width: 80%;
+    margin: 0% 7.5% 3% 7.5%;
     justify-content:space-evenly;
-    margin-bottom: 3%;
 }
 
 .img1 {
@@ -592,11 +593,12 @@ h2 {
 
 .galleryBig {
     display: grid;
+    width: 75%;
     justify-content: space-evenly;
     grid-template-areas: 
-    "img1 img2"
-    "img1 img3";
-    margin-bottom: 3%;
+    "img1 img1 img2"
+    "img1 img1 img3";
+    margin: 0% 10% 3% 10%;
     align-items:flex-end;
 }
 
@@ -607,6 +609,6 @@ h2 {
     font-size: 12px;
     letter-spacing: 1.7px;
     text-transform: uppercase;
-    transform: translate(90px, -20px);
+    transform: translate(30px, -20px);
     text-align: left;
 }
