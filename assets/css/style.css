@@ -57,7 +57,7 @@ header {
 }
 
 #headerUnterkunft .entfernung {
-    font-site: 12px;
+    font-size: 12px;
     font-weight: 500;
     color: #507488;
 }
@@ -158,18 +158,16 @@ label {
 
 /* NAVBAR */
 
-nav {
-    background-color: #FFFFFF;
-}
-
 nav ul {
     display: flex;
     justify-content: space-between;
+    background-color: #FFFFFF;
     padding: 0px 8px;
     align-items: center;
     list-style: none;
-    /* position: fixed;
-    bottom: 0; */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 nav ul li:nth-of-type(3) {
@@ -283,7 +281,7 @@ h2 {
     height: 41.67px;
 }
 
-.ausstattung h2, .unterkunftGastgeber h2, .events h2 {
+.ausstattung h2, .unterkunftGastgeber h2, .events h2, footer h2 {
     padding-top: 8%;
 }
 
@@ -311,15 +309,19 @@ h2 {
     font-weight: 500;
 }
 
-.events ul li {
-    display: inline-block;
-}
-
 .eventTags {
+    display: flex;
+    flex-direction: column;
     list-style: none;
+    color: #507488;
+    font-size: 12px;
+    padding-left: 16px;
 }
 
-
+.eventTags span {
+    font-weight: 600;
+    padding-left: 5px;
+}
 
 .eventDate {
     background-color: #BDCB20;
@@ -331,4 +333,139 @@ h2 {
     width: 44px;
     height: 44px;
     border-radius: 100px;
+}
+
+#anfahrtBeschreibung {
+    display: flex;
+    align-items: baseline;
+    font-size: 12px;
+    font-weight: 400;
+    color: #8E99AF;
+    padding-left: 16px;
+}
+
+#anfahrtBeschreibung p {
+    padding-right: 15px;
+    padding-bottom: 5%;
+}
+
+.contact {
+    display: flex;
+    padding-left: 16px;
+}
+
+.contact button {
+    border: none;
+    border-radius: 10px;
+}
+
+.greenBtn {
+    background-color: #BDCB20;
+    border: none;
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+    border: none;
+    border-radius: 10px;
+}
+
+#buchen {
+    background-color: #FF7A00;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+    text-align: center;
+    height: 44px;
+    width: 163px;
+}
+
+/* PROFIL */
+
+/* PROFIL HEADER */
+
+#headerProfil {
+    background-color: #FFFFFF;
+    font-size: 12px;
+    color: #3C5766;
+}
+
+#headerProfil h3 {
+    text-align: center;
+    padding: 10% 0% 5% 0%;
+}
+
+#headerProfilBeschreibung {
+    display: flex;
+    padding: 0px 16px 0px 16px;
+}
+
+#profilUser {
+    padding-left: 16px;
+    color: #424753;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#username {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#userBeschreibung {
+    color: #9A9A9A;
+    padding: 8px 0px;
+}
+
+.profilStatistik {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    padding-top: 16px;
+}
+
+.quote {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.quoteInhalt p:first-of-type{
+    font-size: 16px;
+}
+
+.quoteInhalt p:last-of-type {
+    color:#9A9A9A;
+    font-size: 12px;
+}
+
+.profilStatistikBtn {
+    align-items: baseline;
+    background-color: red;
+}
+
+/* GALLERY */
+
+.gallery h4 {
+    color: #979797;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 24px 0px 8px 16px;
+}
+
+.gallerySmall {
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.galleryBig {
+    display: flex;
+    justify-content:space-evenly;
+    gap: 5px 5px;
 }
