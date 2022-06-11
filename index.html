@@ -20,10 +20,12 @@
           <input
             type="text"
             id="searchInput"
-            placeholder="NORDRHEIN-WESTFALEN"
+            placeholder="Nordrhein-Westfalen"
             name="search"
           />
-          <button type="submit"><img src="./assets/img/search.png" /></button>
+          <button type="submit">
+            <img src="./assets/img/search.png" alt="Search" />
+          </button>
 
           <label for="radius">Radius:</label>
           <div id="radiusInput">0 km</div>
@@ -44,27 +46,39 @@
         <ul>
           <li>
             <a href="index.html"
-              ><img src="./assets/img/home.png" alt="Home Icon"
+              ><img src="./assets/img/home.png" class="navIcon" alt="Home Icon"
             /></a>
           </li>
           <li>
             <a href="#"
-              ><img src="./assets/img/Compass.png" alt="Compass Icon"
+              ><img
+                src="./assets/img/Compass.png"
+                class="navIcon"
+                alt="Compass Icon"
             /></a>
           </li>
           <li>
             <a href="#"
-              ><img src="./assets/img/arrow.png" alt="Search Arrow"
+              ><img
+                src="./assets/img/arrow.png"
+                id="navIconSearch"
+                alt="Search Arrow"
             /></a>
           </li>
           <li>
             <a href="#"
-              ><img src="./assets/img/profil.png" alt="Profil Icon"
+              ><img
+                src="./assets/img/profil.png"
+                class="navIcon"
+                alt="Profil Icon"
             /></a>
           </li>
           <li>
             <a href="#"
-              ><img src="./assets/img/message.png" alt="Message Icon"
+              ><img
+                src="./assets/img/message.png"
+                class="navIcon"
+                alt="Message Icon"
             /></a>
           </li>
         </ul>
@@ -76,11 +90,29 @@
           <button><img src="./assets/img/pin.png" class="pin" /></button>
         </div>
         <div class="gastgeberBeschreibung">
-          <div>
+          <div class="gastgeberNameEntfernung">
             <p class="gastgeberName">Idyllischer Bauernhof</p>
-            <p class="entfernung"></p>
+            <p class="entfernung">10 km von dir entfernt</p>
           </div>
           <div><img src="./assets/img/reload.png" alt="Reload" /></div>
+        </div>
+      </div>
+
+      <div class="gastgeber">
+        <div class="gastgeberImg">
+          <img src="./assets/img/2.png" class="gastgeberImg" alt="" />
+          <button><img src="./assets/img/pin.png" class="pin" /></button>
+        </div>
+        <div class="gastgeberBeschreibungPreis">
+          <div class="gastgeberNameEntfernung">
+            <p class="gastgeberName">Name der Unterkunft</p>
+            <p class="entfernung">xx km von dir entfernt</p>
+          </div>
+
+          <div class="preis">
+            <p>xx€</p>
+            <p>pro Nacht</p>
+          </div>
         </div>
       </div>
 
@@ -90,10 +122,14 @@
           <button><img src="./assets/img/pin.png" class="pin" /></button>
         </div>
         <div class="gastgeberBeschreibungPreis">
-          <div>
+          <div class="gastgeberNameEntfernung">
             <p class="gastgeberName">Beheizte Jurte</p>
-            <p class="preis">90€ <span>pro Nacht</span></p>
-            <p class="entfernung"></p>
+            <p class="entfernung">34 km von dir entfernt</p>
+          </div>
+
+          <div class="preis">
+            <p>90€</p>
+            <p>pro Nacht</p>
           </div>
         </div>
       </div>
@@ -104,10 +140,14 @@
           <button><img src="./assets/img/pin.png" class="pin" /></button>
         </div>
         <div class="gastgeberBeschreibungPreis">
-          <div>
+          <div class="gastgeberNameEntfernung">
             <p class="gastgeberName">Geräumiges Baumhaus</p>
-            <p class="preis">25€ <span>pro Nacht</span></p>
-            <p class="entfernung"></p>
+            <p class="entfernung">36 km von dir entfernt</p>
+          </div>
+
+          <div class="preis">
+            <p>25€</p>
+            <p>pro Nacht</p>
           </div>
         </div>
       </div>
