@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+/* COLOR */
+
+/* #BDCB20 - grün
+#DDE86B - helles grün
+#283A44 - Schriftfarbe dunkel
+#507488 - Schriftfarbe hell
+#767F14 - Schriftfarbe Searchbar */
+
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 576px;
+    color: #283A44;
+    font-family: 'Raleway';
+    background-color: red;
+}
+
+h1 {
+    font-size: 21px;
+}
+
+/* HEADER */
+
+header {
+    background-color: #BDCB20;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#start {
+    display: flex;
+}
+
+input[type=range] {
+    width: 90%;
+    height: 4px;
+    cursor: pointer;
+    background-color: #DDE86B;
+    border-radius: 2px;
+}
+
+#headerMapAndList {
+    display: flex;
+    background-color: #FFFFFF;
+}
+
+#headerMap {
+    background-color: #DDE86B;
+    width: 50%;
+    border-bottom-left-radius: 8px;
+}
+
+#headerList {
+    background-color: #FFFFFF;
+    width: 50%;
+    border-bottom-left-radius: 8px;
+}
+
+/* NAVBAR */
+
+nav {
+    background-color: #FFFFFF;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    /* position: fixed;
+    bottom: 0; */
+}

@@ -7,5 +7,110 @@
     <title>Camper App - Gruppe 3</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <main>
+      <header>
+        <div id="start">
+          <h1>Wo geht die Reise hin?</h1>
+          <img src="./assets/img/light.png" alt="Light Mode" />
+          <img src="./assets/img/arrow2.png" alt="Arrow" />
+        </div>
+
+        <form id="search">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="NORDRHEIN-WESTFALEN"
+            name="search"
+          />
+          <button type="submit"><img src="./assets/img/search.png" /></button>
+
+          <label for="radius">Radius:</label>
+          <div id="radiusInput">0 km</div>
+          <input type="range" id="radius" min="0" max="500" value="0" />
+        </form>
+
+        <div id="headerMapAndList">
+          <div id="headerMap">
+            <img src="./assets/img/map3.png" alt="Map" />
+          </div>
+          <div id="headerList">
+            <img src="./assets/img/list.png" alt="List" />
+          </div>
+        </div>
+      </header>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html"
+              ><img src="./assets/img/home.png" alt="Home Icon"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./assets/img/Compass.png" alt="Compass Icon"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./assets/img/arrow.png" alt="Search Arrow"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./assets/img/profil.png" alt="Profil Icon"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./assets/img/message.png" alt="Message Icon"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="gastgeber">
+        <div class="gastgeberImg">
+          <img src="./assets/img/1.png" class="gastgeberImg" alt="" />
+          <button><img src="./assets/img/pin.png" class="pin" /></button>
+        </div>
+        <div class="gastgeberBeschreibung">
+          <div>
+            <p class="gastgeberName">Idyllischer Bauernhof</p>
+            <p class="entfernung"></p>
+          </div>
+          <div><img src="./assets/img/reload.png" alt="Reload" /></div>
+        </div>
+      </div>
+
+      <div class="gastgeber">
+        <div class="gastgeberImg">
+          <img src="./assets/img/3.png" class="gastgeberImg" alt="" />
+          <button><img src="./assets/img/pin.png" class="pin" /></button>
+        </div>
+        <div class="gastgeberBeschreibungPreis">
+          <div>
+            <p class="gastgeberName">Beheizte Jurte</p>
+            <p class="preis">90€ <span>pro Nacht</span></p>
+            <p class="entfernung"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="gastgeber">
+        <div class="gastgeberImg">
+          <img src="./assets/img/4.png" class="gastgeberImg" alt="" />
+          <button><img src="./assets/img/pin.png" class="pin" /></button>
+        </div>
+        <div class="gastgeberBeschreibungPreis">
+          <div>
+            <p class="gastgeberName">Geräumiges Baumhaus</p>
+            <p class="preis">25€ <span>pro Nacht</span></p>
+            <p class="entfernung"></p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
