@@ -35,9 +35,53 @@ header {
     font-weight: 600;
 }
 
+#headerUnterkunft {
+    background-color:  #F5F5F5;
+}
+#headerUnterkunft .gastgeberImg img:nth-of-type(1) {
+    width: 100%;
+    object-fit: cover;
+    border: 0px 30px;
+}
+
+#headerUnterkunft .gastgeberBeschreibung {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 27px 27px 16px;
+}
+
+#headerUnterkunft .gastgeberName {
+    font-size: 21px;
+    font-weight: 600;
+    color: #424753;
+}
+
+#headerUnterkunft .entfernung {
+    font-site: 12px;
+    font-weight: 500;
+    color: #507488;
+}
+
+#headerUnterkunft .entfernung img {
+    padding-top: 8px;
+    padding-right: 4px;
+}
+
+.BeschreibungDerUnterkunft {
+    font-size: 12px;
+    font-weight: 400;
+    color: #283A44;
+}
+
+.BeschreibungDerUnterkunft p {
+    padding: 0px 16px;
+}
+
 #start {
     display: flex;
     padding: 100px 0px 16px 16px;
+    align-items: center;
+    gap: 16px;
 }
 
 form {
@@ -73,9 +117,14 @@ input[type=range] {
     width: 95%;
     height: 4px;
     cursor: pointer;
-    background-color: #DDE86B;
+    /* background-color: #DDE86B; */
     border-radius: 2px;
-    padding: 0px 16px;
+    padding: 0px 16px 16px 16px; 
+}
+
+#radius {
+    display: flex;
+    padding-bottom: 10px;
 }
 
 label {
@@ -115,14 +164,22 @@ nav {
 
 nav ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 0px 8px;
+    align-items: center;
     list-style: none;
     /* position: fixed;
     bottom: 0; */
 }
 
+nav ul li:nth-of-type(3) {
+    object-fit: contain;
+}
+
 #navIconSearch {
     background-color: #BDCB20;
+    width: 60px;
+    height: 60px;
     border-radius: 30px;
     box-shadow: 0px 2px 38px rgba(0, 0, 0, 0.3);
 }
@@ -158,7 +215,12 @@ nav ul {
 
 .gastgeberBeschreibung, .gastgeberBeschreibungPreis {
     display: flex;
+    align-items: center;
     width: 100%;
+}
+
+.gastgeberBeschreibung #reload {
+    justify-content: flex-end;
 }
 
 .entfernung {
@@ -184,3 +246,89 @@ nav ul {
     padding-top: 2px;
 }
 
+/* SEITE UNTERKUNFT */
+
+h2 {
+    padding: 0px 0px 8px 16px;
+    color: #507488;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.7px;
+}
+
+.tage {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 20px;
+    padding: 0px 16px;
+}
+
+.calenderGrey {
+    background-color: #CEDBE2;
+    border-radius: 20.8364px;
+    width: 41.67px;
+    height: 41.67px;
+}
+
+.calenderGreen {
+    background: #BDCB20;
+    border-radius: 20.8364px;
+    width: 41.67px;
+    height: 41.67px;
+}
+
+.ausstattung h2, .unterkunftGastgeber h2, .events h2 {
+    padding-top: 8%;
+}
+
+.ausstattungTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-left: 16px;
+}
+
+.tag {
+    background-color: #CEDBE2;
+    color: #F5F8F9;
+    border-radius: 16px;
+    max-width: fit-content;
+    padding: 4px 12px;
+    flex-grow: 0;
+}
+
+.unterkunftGastgeber div {
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.events ul li {
+    display: inline-block;
+}
+
+.eventTags {
+    list-style: none;
+}
+
+
+
+.eventDate {
+    background-color: #BDCB20;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 100px;
+}
