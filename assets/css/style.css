@@ -36,73 +36,7 @@ header {
     font-weight: 600;
 }
 
-.gastgeberImg {
-    width: 100%;
-    object-fit: cover;
-    position: relative;
-}
 
-#headerUnterkunft {
-    background-color:  #F5F5F5;
-}
-
-#bauernhof img {
-    width: 100%;
-    object-fit: cover;
-}
-
-#bauernhof {
-    position: relative;
-}
-
-.gastgeberImg2 button {
-    position: absolute;
-    background-color: #FFFFFF;
-    transform: translate(420px, -580px);
-    width: 32px;
-    height: 32px;
-    border-radius: 32px;
-    border: none;
-}
-
-#headerUnterkunft .gastgeberBeschreibung {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 27px 27px 16px;
-}
-
-#headerUnterkunft .gastgeberName {
-    font-size: 21px;
-    font-weight: 600;
-    color: #424753;
-}
-
-#headerUnterkunft .entfernung {
-    font-size: 12px;
-    font-weight: 500;
-    color: #507488;
-}
-
-#headerUnterkunft .entfernung img {
-    padding-top: 8px;
-    padding-right: 4px;
-}
-
-.BeschreibungDerUnterkunft {
-    font-size: 12px;
-    font-weight: 400;
-    color: #283A44;
-}
-
-.BeschreibungDerUnterkunft p {
-    padding: 0px 16px;
-}
-
-.BeschreibungDerUnterkunft img {
-    object-fit: cover;
-    width: 100%;
-    padding: 15px 0px;
-}
 #start {
     display: flex;
     padding: 100px 0px 16px 16px;
@@ -135,8 +69,8 @@ input[type=text] {
 #search button {
     background-color: #FFFFFF;
     border: none;
-    transform: translateX(-40px);
-    /* transform: translateY(5px); */
+    transform: translateZ(0px);
+    transform: translate(410px,-30px);
 }
 
 input[type=range] {
@@ -194,6 +128,7 @@ label {
 /* NAVBAR */
 
 nav ul {
+    height: 80px;
     display: flex;
     justify-content: space-between;
     background-color: #FFFFFF;
@@ -201,6 +136,7 @@ nav ul {
     align-items: center;
     list-style: none;
     position: fixed;
+    z-index: 2;
     bottom: 0;
     width: 100%;
 }
@@ -243,6 +179,11 @@ nav ul {
     border: none;
 }
 
+.gastgeberImg button:active img {
+    transform: rotateZ(-45deg);
+    filter: invert(53%) sepia(26%) saturate(5917%) hue-rotate(2deg) brightness(103%) contrast(108%);
+}
+
 .gastgeberBeschreibung, .gastgeberBeschreibungPreis {
     display: flex;
     align-items: center;
@@ -278,6 +219,8 @@ nav ul {
 
 /* SEITE UNTERKUNFT */
 
+/* UNTERKUNFT GENERAL */
+
 h2 {
     padding: 0px 0px 8px 16px;
     color: #507488;
@@ -286,6 +229,89 @@ h2 {
     text-transform: uppercase;
     letter-spacing: 1.7px;
 }
+
+.calender h2, .ausstattung h2, .unterkunftGastgeber h2, .events h2, footer h2 {
+    padding-top: 8%;
+}
+
+/* UNTERKUNFT HEADER */
+
+.gastgeberImg {
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+#headerUnterkunft {
+    background-color:  #F5F5F5;
+}
+
+#bauernhof img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#bauernhof {
+    position: relative;
+}
+
+.gastgeberImg2 button {
+    position: absolute;
+    background-color: #FFFFFF;
+    transform: translate(440px,-650px);
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    border: none;
+}
+
+.gastgeberImg2 button:active img {
+    transform: rotateZ(-45deg);
+    filter: invert(53%) sepia(26%) saturate(5917%) hue-rotate(2deg) brightness(103%) contrast(108%);
+}
+
+#headerUnterkunft .gastgeberBeschreibung {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 27px 27px 16px;
+}
+
+#headerUnterkunft .gastgeberName {
+    font-size: 21px;
+    font-weight: 600;
+    color: #424753;
+}
+
+#headerUnterkunft .entfernung {
+    font-size: 12px;
+    font-weight: 500;
+    color: #507488;
+}
+
+#headerUnterkunft .entfernung img {
+    padding-top: 8px;
+    padding-right: 4px;
+}
+
+/* UNTERKUNFT BESCHREIBUNG */
+
+.BeschreibungDerUnterkunft {
+    font-size: 12px;
+    font-weight: 400;
+    color: #283A44;
+}
+
+.BeschreibungDerUnterkunft p {
+    padding: 0px 16px;
+}
+
+.BeschreibungDerUnterkunft img {
+    object-fit: cover;
+    width: 100%;
+    padding: 15px 0px;
+}
+
+/* UNTERKUNFT KALENDER */
 
 .tage {
     display: flex;
@@ -313,9 +339,7 @@ h2 {
     height: 41.67px;
 }
 
-.calender h2, .ausstattung h2, .unterkunftGastgeber h2, .events h2, footer h2 {
-    padding-top: 8%;
-}
+/* UNTERKUNFT AUSSTATTUNG */
 
 .ausstattungTags {
     display: flex;
@@ -333,6 +357,8 @@ h2 {
     flex-grow: 0;
 }
 
+/* UNTERKUNFT GASTGEBER */
+
 .unterkunftGastgeber div {
     display: flex;
     align-items: center;
@@ -340,6 +366,8 @@ h2 {
     font-size: 16px;
     font-weight: 500;
 }
+
+/* UNTERKUNFT EVENTS */
 
 .eventTags {
     display: flex;
@@ -377,6 +405,8 @@ h2 {
     align-items: center;
 }
 
+/* UNTERKUNFT ANFAHRT  */
+
 #anfahrtBeschreibung {
     display: flex;
     align-items: baseline;
@@ -397,6 +427,8 @@ h2 {
     padding-left: 16px;
 }
 
+/* UNTERKUNFT KONTAKT */
+
 .contact div:first-of-type {
     display: flex;
     align-items: center;
@@ -411,6 +443,8 @@ h2 {
     border: none;
     border-radius: 10px;
 }
+
+/* BUTTONS */
 
 .greenBtn {
     align-items: center;
@@ -435,11 +469,8 @@ h2 {
     width: 163px;
 }
 
-/* footer {
-    margin-bottom: 20%;
-} */
 
-/* PROFIL */
+/* PROFIL-HTML */
 
 /* PROFIL HEADER */
 
@@ -576,5 +607,6 @@ h2 {
     font-size: 12px;
     letter-spacing: 1.7px;
     text-transform: uppercase;
-    transform: translate(70px, -20px);
+    transform: translate(90px, -20px);
+    text-align: left;
 }
