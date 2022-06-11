@@ -27,11 +27,18 @@
             <img src="./assets/img/search.png" alt="Search" />
           </button>
 
-          <div id="radius">
+          <div id="radius2">
             <label for="radius">Radius:</label>
             <div id="radiusInput">0 km</div>
           </div>
-          <input type="range" id="radius" min="0" max="500" value="0" />
+          <input
+            type="range"
+            id="radius"
+            min="0"
+            max="500"
+            onchange="ChangeRadius(event)"
+            value="0"
+          />
         </form>
 
         <div id="headerMapAndList">
@@ -156,6 +163,8 @@
           </div>
         </div>
       </div>
+
+      <script src="./assets/js/main.js"></script>
     </main>
   </body>
 </html>
